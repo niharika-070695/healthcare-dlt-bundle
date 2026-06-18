@@ -24,8 +24,10 @@ def silver_applications():
             F.col("application_id"),
             F.col("case_id"),
 
-            F.upper(
-                F.col("program_code")
+            F.trim(
+                F.upper(
+                    F.col("program_code")
+                )
             ).alias("program_code"),
 
             F.initcap(
