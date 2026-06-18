@@ -1,0 +1,25 @@
+bundle:
+  name: healthcare_dlt_bundle
+
+include:
+  - resources/*.yml
+
+variables:
+  target_schema:
+    description: Target schema for each environment
+
+targets:
+  dev:
+    default: true
+    mode: development
+    workspace:
+      host: https://dbc-c53ff5d1-7189.cloud.databricks.com
+    variables:
+      target_schema: dev_benefits
+
+  qa:
+    mode: development
+    workspace:
+      host: https://dbc-c53ff5d1-7189.cloud.databricks.com
+    variables:
+      target_schema: qa_benefits

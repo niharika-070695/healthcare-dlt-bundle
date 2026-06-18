@@ -1,0 +1,26 @@
+{
+  "version": "v1",
+  "host": "https://dbc-c53ff5d1-7189.cloud.databricks.com",
+  "remote_path": "/Workspace/Users/harika5991@gmail.com/.bundle/healthcare_dlt_bundle/qa/files",
+  "last_modified_times": {
+    "databricks.yml": "2026-06-17T02:22:14.1514808-04:00",
+    "resources/pipeline.yml": "2026-06-17T01:38:30.9067604-04:00",
+    "src/bronze.py": "2026-06-16T20:58:07.7433199-04:00",
+    "src/gold.py": "2026-06-17T01:35:59.9437644-04:00",
+    "src/silver.py": "2026-06-17T01:27:21.6252035-04:00"
+  },
+  "local_to_remote_names": {
+    "databricks.yml": "databricks.yml",
+    "resources/pipeline.yml": "resources/pipeline.yml",
+    "src/bronze.py": "src/bronze.py",
+    "src/gold.py": "src/gold.py",
+    "src/silver.py": "src/silver.py"
+  },
+  "remote_to_local_names": {
+    "databricks.yml": "databricks.yml",
+    "resources/pipeline.yml": "resources/pipeline.yml",
+    "src/bronze.py": "src/bronze.py",
+    "src/gold.py": "src/gold.py",
+    "src/silver.py": "src/silver.py"
+  }
+}
