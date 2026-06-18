@@ -14,6 +14,10 @@ from pyspark.sql import functions as F
     "valid_program_code",
     "program_code IS NOT NULL"
 )
+@dp.expect_or_drop(
+    "valid_application_status",
+    "application_status IN ('SUBMITTED', 'UNDER_REVIEW', 'DENIED', 'APPROVED')"
+)
 def silver_applications():
 
     return (
