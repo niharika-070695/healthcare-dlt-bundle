@@ -21,3 +21,21 @@ def gold_program_summary():
             F.count("*").alias("application_count")
         )
     )
+
+
+@dp.materilaized_view(
+    name = "gold_county_summary",
+    comment = "Application count by County"
+)
+def gold_county_summary():
+    return (
+        spark.read.table(
+            "silver_applications"
+        )
+        .groupBy(
+            "county"
+        )
+        .agg(
+            F.count("*").alias("application_count")
+        )
+    )
